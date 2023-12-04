@@ -1,0 +1,149 @@
+.header {
+    &_body {
+        display    : flex;
+        height     : 80px;
+        align-items: center;
+
+        @media(max-width:762px) {
+            flex-direction: column;
+            height        : auto;
+        }
+    }
+
+    &_top {
+        display        : flex;
+        align-items    : center;
+        justify-content: space-between;
+        width          : 100%;
+
+
+        @media(max-width:761px) {
+            margin-top: 10px;
+        }
+
+        p {
+            z-index    : 5;
+            font-weight: 700;
+            font-size  : 12px;
+            line-height: 15px;
+            /* identical to box height */
+            color      : #FFFFFF;
+
+
+            @media(min-width:768px) {
+                display: none;
+            }
+        }
+
+
+    }
+
+    &_bottom {
+        display        : flex;
+        justify-content: center;
+
+        @media(max-width:762px) {
+            margin-top   : 7px;
+            margin-bottom: 7px;
+        }
+
+    }
+}
+
+
+
+.top {
+
+    &_burger {}
+
+    &_logo {
+        font-weight: 700;
+        font-size  : 25px;
+        line-height: 25px;
+        /* identical to box height, or 100% */
+
+        letter-spacing: 0.15em;
+
+        color: #FFFFFF;
+    }
+
+    &_form {}
+
+    &_contact {
+        display: flex;
+
+        @media(max-width:918px) {
+            display: none;
+        }
+    }
+
+    &_basket {}
+
+    &_right-btn {
+        background   : linear-gradient(114.93deg, #618967 5.11%, #72A479 94%);
+        border-radius: 10px;
+        padding      : 17px 24px;
+        font-weight  : 600;
+        font-size    : 14px;
+        line-height  : 17px;
+        color        : #FFFFFF;
+        float        : right;
+
+        @media(max-width:936px) {
+            font-size: 13px;
+        }
+
+        @media(max-width:497px) {
+            padding: 10px 12px;
+        }
+
+        span {
+            background-color: #FFFFFF;
+            padding         : 10px 15px;
+            border-radius   : 100%;
+            margin-left     : 10px;
+            color           : #000000;
+
+            @media(max-width:497px) {
+                padding: 5px 7.5px;
+            }
+        }
+    }
+}
+
+
+.menu-icon {}
+
+.search {
+
+    &_form {}
+
+    &_location {}
+
+    &_input {}
+
+    &_btn {}
+}
+
+.contact {
+    margin-right: 7px;
+
+    &_img {}
+
+    &_info {
+        margin-left: 5px;
+    }
+
+    &_top {
+        color      : var(--text-collor);
+        font-weight: 400;
+        font-size  : 12px;
+        line-height: 20px;
+    }
+
+    &_bottom {
+        font-weight: 800;
+        font-size  : 14px;
+
+    }
+}

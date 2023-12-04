@@ -1,0 +1,181 @@
+//@import "_header";
+@import "_swipe";
+@import "_header";
+@import "_reset";
+@import "_fonts";
+@import "_search";
+@import "_burger";
+@import "_range";
+@import "_card";
+@import "_about";
+@import "_footer";
+@import "_card-item";
+@import "_basket";
+@import "_ordering";
+
+
+*img {
+    max-width: 100%;
+}
+
+:root {
+    --bg-color         : #403C3B;
+    --accent-color     : #618967;
+    --text-collor      : #CFCFCF;
+    --text-collor-white: #fff;
+}
+
+body {
+    height          : 100%;
+    font-family     : 'Gilroy', sans-serif;
+    background-color: var(--bg-color);
+    color           : #fff;
+
+    &.lock {
+        overflow: hidden;
+    }
+}
+
+[class*="_container"] {
+    max-width: 1300px;
+    margin   : 0 auto;
+    padding  : 0 15px;
+}
+
+.wrapper {
+    min-height    : 100%;
+    display       : flex;
+    flex-direction: column;
+}
+
+.page {
+    flex: 1 1 auto;
+}
+
+#cold,
+#hot,
+#meat {
+    scroll-margin-top: 20px;
+}
+
+/****************************Общие классы*********/
+button,
+input [ type="submit"
+],
+input [ type="text"
+],
+input [ type="name"
+],
+input [ type="reset"
+
+] {
+    background: none;
+    color     : inherit;
+    border    : none;
+    padding   : 0;
+    font      : inherit;
+    cursor    : pointer;
+    outline   : inherit;
+}
+
+h2 {
+    font-weight: 700;
+    font-size  : clamp(1.25rem, 1.005rem + 1.22vw, 2rem);
+
+    text-transform: uppercase;
+    color         : #FFFFFF;
+
+    border-left: 4px solid var(--accent-color);
+
+    padding-left : 30px;
+    margin-bottom: clamp(2.625rem, 2.38rem + 1.22vw, 3.375rem);
+
+}
+
+.btn {
+    font-weight     : 600;
+    font-size       : 14px;
+    line-height     : 17px;
+    /* identical to box height */
+    padding         : 13px 19px;
+    background-color: var(--accent-color);
+    border-radius   : 10px;
+    display         : flex;
+    align-items     : center;
+    color           : #fff;
+
+    img {
+        height     : 25px;
+        width      : 25px;
+        margin-left: 10px;
+
+    }
+
+}
+
+
+/***********************************header***************************/
+
+
+/************************************HERO******************************/
+.page {
+
+    &_hero {}
+}
+
+.hero {
+    position: relative;
+
+    &_info {
+        position: absolute;
+        top     : 20%;
+        left    : 10%;
+
+        @media(max-width:1173px) {
+            top : 15%;
+            left: 7%;
+        }
+
+    }
+
+    &_info img {
+        height: clamp(10.813rem, 7.813rem + 15vw, 20rem);
+
+    }
+
+    &_img {}
+
+    &_img img {
+        width     : 100%;
+        object-fit: cover;
+        min-height: 283px;
+        z-index   : 3;
+
+        @media(max-width:530px) {
+            min-height: 203px;
+        }
+
+    }
+
+}
+
+.line {
+    margin-top   : 20px;
+    border-top   : 4px dotted #CFCFCF;
+    margin-bottom: 36px;
+
+}
+
+/*--------------------/Hero--------------------*/
+
+/*--------------------Filter--------------------*/
+
+
+
+/**************featured***************************/
+
+
+/************slide**************************/
+
+
+/***********************************WHY*/

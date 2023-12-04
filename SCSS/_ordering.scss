@@ -1,0 +1,158 @@
+.page {
+
+    &_ordering {
+
+        max-width: 800px;
+        margin   : 0 auto;
+
+    }
+}
+
+.ordering {
+    margin-top: 20px;
+
+
+    &_body {}
+
+    &_contact-info {
+        background   : linear-gradient(90deg, #494544 0%, #504B4A 100%);
+        border-radius: 10px;
+        padding      : 32px;
+        margin-bottom: 20px;
+    }
+
+    &_deliv {
+        margin-top    : 40px;
+        display       : flex;
+        flex-direction: row;
+        margin-bottom : 50px;
+    }
+}
+
+
+.inp {
+    padding         : 20px 0px 20px 0px;
+    border          : 1px solid rgba(255, 255, 255, 0.1);
+    border-radius   : 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color           : #FFFFFF;
+    width           : 100%;
+    text-indent     : 30px;
+    margin-bottom   : 20px;
+
+
+}
+
+.inp::placeholder {
+    color: #FFFFFF;
+
+}
+
+.inp-contcat:not(:last-child) {
+    margin-right: 15px;
+
+    @media(max-width:520px) {
+        margin-bottom: 20px;
+    }
+}
+
+.input-contact {
+    margin-top: 30px;
+    display   : flex;
+
+    @media(max-width:520px) {
+        flex-direction: column;
+    }
+}
+
+h3 {
+    font-weight: 700;
+    font-size  : 18px;
+    line-height: 22px;
+    color      : #FFFFFF;
+
+}
+
+
+
+input[type="radio"] {
+    display: none;
+}
+
+.delivery+label {
+    padding      : 20px 54px;
+    border       : 2px solid var(--accent-color);
+    border-radius: 10px 0px 0px 10px;
+
+    @media(max-width:477px) {
+        padding: 10px 27px;
+    }
+}
+
+.pickup+label {
+    padding      : 20px 54px;
+    border       : 2px solid var(--accent-color);
+    border-radius: 0px 10px 10px 0px;
+
+    @media(max-width:477px) {
+        padding: 10px 27px;
+    }
+}
+
+
+input[type="radio"]:checked+label {
+    background-color: var(--accent-color);
+    border-radius   : 10px 0px 0px 10px;
+}
+
+input[type="radio"]:checked+.lab2 {
+    background-color: var(--accent-color);
+    border-radius   : 0px 10px 10px 0px;
+}
+
+.input-delivery {
+    display       : flex;
+    flex-direction: column;
+
+    @media(max-width:627px) {
+        flex-direction: column;
+    }
+}
+
+/*********/
+.ordering {
+
+    &_input {}
+}
+
+.ordering-input {
+
+    &_top {
+        display   : flex;
+        margin-top: 20px;
+
+        @media(max-width:627px) {
+            flex-direction: column;
+        }
+    }
+
+    &_center {
+        display: flex;
+
+        @media(max-width:627px) {
+            flex-direction: column;
+        }
+    }
+
+    &_bottom {}
+}
+
+.inp {}
+
+.inp-contcat {}
+
+.btn-order {
+    display        : flex;
+    text-align     : center;
+    justify-content: center;
+}

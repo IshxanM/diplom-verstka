@@ -1,0 +1,166 @@
+.page {
+
+    &_basket-body {
+        margin-top: 30px;
+    }
+}
+
+.basket {
+
+
+    &_body {
+        display        : flex;
+        justify-content: space-between;
+        align-items    : center;
+        background     : linear-gradient(90deg, #494544 0%, #504B4A 100%);
+        border-radius  : 10px;
+        padding        : 10px;
+
+        border-bottom: 1px solid #FFFFFF33;
+
+        @media(max-width:655px) {
+            flex-direction: column;
+            align-items   : center;
+
+        }
+
+
+    }
+
+
+
+    &_left {
+        display        : flex;
+        justify-content: space-between;
+        align-items    : center;
+
+        @media(max-width:655px) {
+            width: 100%;
+
+        }
+    }
+
+    &_img {
+        min-width : 117px;
+        min-height: 86px;
+    }
+
+    &_img img {
+        width : 117px;
+        height: 86px;
+
+        @media(max-width:655px) {
+            width : 111px;
+            height: 82px;
+        }
+
+
+    }
+
+    &_info {
+        display       : flex;
+        flex-direction: column;
+
+
+    }
+
+    &_right {
+        display        : flex;
+        align-items    : center;
+        justify-content: space-between;
+        width          : 50%;
+
+        @media(max-width:655px) {
+            width: 100%;
+        }
+    }
+
+    &_quantity {
+        display    : flex;
+        align-items: center;
+    }
+
+    &_price {
+        font-weight: 700;
+        font-size  : 20px;
+        line-height: 24px;
+    }
+
+    &_del {}
+}
+
+.basket-info {
+    max-width: 350px;
+    padding  : 20px;
+
+    @media(max-width:345px) {
+        padding: 10px;
+    }
+
+    &_title {
+        font-weight: 700;
+        font-size  : 18px;
+        line-height: 22px;
+
+        @media(max-width:345px) {
+            font-size: 14px;
+        }
+    }
+
+    &_text {
+        font-weight: 400;
+        font-size  : 12px;
+        line-height: 14px;
+        color      : var(--text-collor);
+
+        @media(max-width:459px) {
+            display: none;
+        }
+
+    }
+
+
+}
+
+.basket {
+
+
+    &_total {
+        padding      : 20px;
+        margin-top   : 30px;
+        background   : linear-gradient(90deg, #494544 0%, #504B4A 100%);
+        border-radius: 10px;
+
+        display        : flex;
+        justify-content: space-between;
+        max-width      : 60%;
+
+        @media(max-width:547px) {
+            flex-direction: column;
+        }
+    }
+}
+
+.total {
+    margin     : 30px auto;
+    align-items: center;
+
+    &_left {
+        span {
+            margin-left: 20px;
+            font-weight: 700;
+            font-size  : 20px;
+            line-height: 24px;
+
+
+        }
+
+        @media(max-width:547px) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &_right {}
+}
+
+.btn {}

@@ -1,0 +1,154 @@
+.page {
+
+    &_cold-snacks {
+        border-radius: 10px;
+        overflow     : hidden;
+
+    }
+
+    &_cold-snacks {}
+}
+
+
+
+.cold {}
+
+.swiper-slide {
+
+    :hover {
+        cursor: pointer;
+    }
+}
+
+.swiper-wrapper {}
+
+.swiper-slide {
+    margin-bottom: 50px;
+
+
+    &_body {
+        background   : linear-gradient(90deg, #494544 0%, #504B4A 100%);
+        border-radius: 10px;
+        width        : 287px;
+        height       : 405px;
+
+
+        @media(max-width:360px) {
+            width : 290px;
+            height: 397px;
+        }
+    }
+}
+
+.card {
+
+    position: relative;
+
+    :hover {
+        filter: drop-shadow(0px 30px 45px rgba(43, 40, 40, 0.6));
+    }
+
+    &_img {
+
+        margin-bottom: 7px;
+
+        img {
+            border-radius: 10px 10px 0px 0px;
+            width        : 328px;
+            height       : 228px;
+
+            @media(max-width:360px) {
+                width : 290px;
+                height: 216px;
+            }
+        }
+    }
+
+    &_quantity {
+        position        : absolute;
+        top             : -15px;
+        right           : -15px;
+        padding         : 17px 20px;
+        background-color: var(--accent-color);
+        border-radius   : 100%;
+        font-weight     : 700;
+        font-size       : 20px;
+
+
+        color: #FFFFFF;
+    }
+
+    &_info {
+        display       : flex;
+        flex-direction: column;
+        padding       : 13px;
+    }
+
+    &_top {
+        display        : flex;
+        justify-content: space-between;
+        align-items    : center;
+        margin-bottom  : 14px;
+    }
+
+    &_name {
+        font-weight: 700;
+        font-size  : 22px;
+        line-height: 27px;
+        color      : #FFFFFF;
+
+
+    }
+
+    &_weight {
+        font-weight: 400;
+        font-size  : 12px;
+        line-height: 14px;
+        /* identical to box height */
+
+
+        color: #FFFFFF;
+    }
+
+    &_text {
+        font-weight  : 400;
+        font-size    : 13px;
+        line-height  : 17px;
+        color        : var(--text-collor);
+        margin-bottom: 20px;
+        text-align   : left;
+
+        white-space: nowrap;
+
+        overflow: hidden;
+
+
+        text-overflow: ellipsis;
+    }
+
+    &_text p {}
+
+    &_bottom {
+        display        : flex;
+        justify-content: space-between;
+        align-items    : center;
+    }
+
+    &_price {
+        font-weight: 700;
+        font-size  : 20px;
+        line-height: 24px;
+
+        color: #FFFFFF;
+    }
+
+    &_btn {}
+}
+
+.card_text p {}
+
+.line2 {
+    border-bottom: 1px solid var(--text-collor);
+    opacity      : 0.5;
+    margin-bottom: 50px;
+}
